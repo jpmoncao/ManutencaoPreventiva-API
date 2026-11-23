@@ -3,7 +3,7 @@
 API REST desenvolvida em Java 21, Spring Boot 3.5.7, Spring Data JPA e Swagger/OpenAPI. Projeto acadêmico de Arquitetura Orientada a Serviços.
 
 ## Problema
-O controle manual da manutenção preventiva pode ocasionar esquecimento de revisões, dificuldade em localizar histórico e paradas imprevistas. A API centraliza máquinas, planos, técnicos e execuções.
+Muitas organizações enfrentam dificuldades no gerenciamento da manutenção preventiva devido à falta de controles padronizados e indicadores de acompanhamento. Essa deficiência contribui para falhas inesperadas em máquinas e equipamentos, ocasionando interrupções na produção, aumento dos custos de manutenção corretiva e redução da eficiência operacional.
 
 ## Como executar (Windows ou Linux)
 
@@ -73,9 +73,6 @@ O controle manual da manutenção preventiva pode ocasionar esquecimento de revi
 
 ## Testes
 `mvn test` executa o teste básico de carregamento de contexto. Recomendamos testes de integração adicionais antes do uso real. API **educacional**, sem autenticação, auditoria ou deploy de produção.
-
-## Entrega acadêmica
-Enviar o código ao GitHub com este README; demonstrar Swagger, banco de dados e regras de negócio. Adicione à entrega a declaração de uso de IA se isso for exigido pela disciplina.
 
 ## IDs automáticos
 Nos endpoints POST /api/maquinas e POST /api/tecnicos, o JSON de entrada não possui ID. O banco gera o ID automaticamente e a resposta traz o identificador criado. Planos e execuções também usam DTOs de entrada sem ID próprio; IDs de máquinas, técnicos e planos são informados somente como referências para relacionamentos.
