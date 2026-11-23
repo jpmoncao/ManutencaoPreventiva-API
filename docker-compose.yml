@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: manutcontrol
+      POSTGRES_USER: manutcontrol
+      POSTGRES_PASSWORD: manutcontrol
+    ports:
+      - "5432:5432"
+    volumes:
+      - manutcontrol_pg:/var/lib/postgresql/data
+volumes:
+  manutcontrol_pg:

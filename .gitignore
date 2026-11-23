@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+target/
+dados/
+*.iml
+.env
+manutcontrol-db*
